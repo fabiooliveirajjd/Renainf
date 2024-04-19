@@ -7,7 +7,7 @@ import Collapse from '@mui/material/Collapse';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 import { ComponenteConsulta } from "../../componets/ComponenteConsulta/ComponenteConsulta";
-import { ComoponenteCadastroReenvio } from "../ComoponenteCadastroReenvio/ComoponenteCadastroReenvio";
+import { CadastroReenvio } from "../CadastroReenvio/CadastroReenvio";
 import List from '@mui/material/List';
 import Folder from '@mui/icons-material/Folder';
 import FolderOpen from '@mui/icons-material/FolderOpen';
@@ -72,7 +72,7 @@ export const BodyConsulta = () => {
                     </div>
                 </section>
             </div>
-            {isConsultaOpen ? <ComponenteConsulta /> : isCadastroOpen ? <ComoponenteCadastroReenvio /> : <ComponenteInicial />}
+            {isConsultaOpen ? <ComponenteConsulta /> : isCadastroOpen ? <CadastroReenvio /> : <ComponenteInicial />}
         </div>
     );
 }
