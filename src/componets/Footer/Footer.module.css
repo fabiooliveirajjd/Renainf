@@ -1,0 +1,16 @@
+.containerFooter {
+  display: flex;
+  background-color: yellow;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 7%;
+  align-items: end;
+}
+
+.containerFooter p {
+  font-size: 18px;
+  margin-right: 2%;
+  margin-left: 2%;
+  font-family: 'sans-serif';
+  justify-content: flex-end;
+}

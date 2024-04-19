@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+}
+
+.menu {
+    width: 100%;
+    background-color: #FFC928;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.section {
+    background-image: url('../../assets/fundo.png');
+    min-height: 100vh;
+}
+
+.icon{
+   color: #FFC928;
+}
+
+.iconRenainf {
+   color: #FFC928;
+    margin-right: 52px;
+}
+
+.iconTv {
+   color: #FFC928;
+     margin-right: 1px;
+     font-size: 15px;
+}
+
+.renainf {
+    color: #FFC928;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: -40px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.tv {
+   color: #FFC928;
+    font-size: 15px;
+    font-weight: bold;
+   white-space: nowrap;
+   margin-left:19px;
+}
+
+.tr {
+    font-size: 15px;
+    font-weight: bold;
+   color: #FFC928;
+   white-space: nowrap;
+}

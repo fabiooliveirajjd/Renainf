@@ -1,0 +1,102 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(238, 238, 238);
+    width: 100%;
+}
+
+.titulo {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@media (max-width: 1100px) {
+    .titulo {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 800px) {
+    .titulo {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 600px) {
+    .titulo {
+        font-size: 15px;
+    }
+}
+
+.areaServidor {
+    border-color: black, snow;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    width: 90%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.areaTransacao {
+    border-color: black, snow;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    width: 90%;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 4%;
+}
+
+.table {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid white;
+    border-collapse: collapse; 
+}
+
+/* Media queries para breakpoints específicos */
+@media (min-width: 576px) {
+    .table {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .table {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .table {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .table {
+        max-width: 1000px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .table {
+        max-width: 1100px;
+    }
+}
+
+
+.thead {
+    background-color: #cee5fc;
+     border-collapse: collapse;
+     cursor: pointer;
+}
+
+.tdR {
+    text-align: left;
+}
