@@ -12,8 +12,13 @@ export const ComponenteConsulta = () => {
         setCurrentDate(new Date());
     }, []);
 
-    
+    const handleClick = (componente) => {
+        setComponenteAtivo(componente);
+    }
 
+    if (componenteAtivo) {
+        return componenteAtivo;
+    }
     return (
         <div className={styles.container}>
             <h1 className={styles.titulo}>Painel de Controle Renainf</h1>
@@ -36,12 +41,12 @@ export const ComponenteConsulta = () => {
                         <tr>
                             <td >401</td>
                             <td className={styles.tdR}>Consulta Infração</td>
-                            <td><a href="https://www.google.com/" style={{ cursor: 'pointer' }}>Executar</a></td>
+                            <td><a style={{ cursor: 'pointer' }}>Executar</a></td>
                         </tr>
                         <tr>
                             <td>402</td>
                             <td className={styles.tdR}>Consulta Infrações por Placa</td>
-                            <td><a href="https://www.google.com/" style={{ cursor: 'pointer' }}>Executar</a></td>
+                            <td><a onClick={() => handleClick(<Consulta402 />)}  style={{ cursor: 'pointer' }}>Executar</a></td>
                         </tr>
                         <tr>
                             <td>403</td>
@@ -88,10 +93,11 @@ export const ComponenteConsulta = () => {
                             <td className={styles.tdR}>Consulta Principal Condutor</td>
                             <td><a href="https://www.google.com/" style={{ cursor: 'pointer' }}>Executar</a></td>
                         </tr>
-                        
+
                     </tbody>
                 </table>
             </div>
+            {Consulta402 && componenteAtivo}
         </div>
     );
 }
