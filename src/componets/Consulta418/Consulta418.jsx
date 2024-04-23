@@ -1,40 +1,14 @@
 import React, { useEffect, useState } from "react";
-import styles from "./Consulta402.module.css";
+import styles from "./Consulta418.module.css";
 import { Consulta } from "../Consulta/Consulta";
-import axios from "axios";
 
-export const Consulta402 = () => {
+export const Consulta418 = () => {
     const [currentDate, setCurrentDate] = useState(new Date());
     const [placa, setPlaca] = useState("");
     const [dataInicio, setDataInicio] = useState("");
     const [dataFim, setDataFim] = useState("");
     const [situacaoExigibilidade, setSituacaoExigibilidade] = useState("TODAS");
     const [exibirConsulta, setExibirConsulta] = useState(true); // Novo estado para controlar a exibição da consulta
-
-    const handleConsultar = async () => {
-        try {
-            const response = await axios.post(
-                'https://renainf-gicom-auto-dsv.prf.gov.br/consultar/402',
-                {
-                    "placaVeiculo": "par5f22",
-                    "ufEmplacamentoInformada": "string",
-                    "dataInicioConsulta": "2022-03-10",
-                    "dataFimConsulta": "2022-03-10",
-                    "situacaoExigibilidade": "TODAS"
-                },
-                {
-                    headers: {
-                        'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ1cG4iOiJSRU5BSU5GIiwiaXNzIjoiZGV2LnJlbmFpbmYiLCJncm91cHMiOlsiUkVOQUlORiJdLCJpYXQiOjE2ODYxNjcyMzksImV4cCI6MjAwMTUyNzIzOSwianRpIjoiNjg5YTFmM2EtNWU5MS00MjhkLWFkOTUtN2RkNzZkMzRhOTM0In0.IiOJWADl_OnzFtsEUC65kW8XL5MtQVUjeUynuj9hnrSaA185UmYqajRSsVPatPfKLqTRldKBNBCNlqasuR3v5jLuIDhhB_8MveX1ZRy3BPbhWPR4bmjQktfYDfuUNbCLfHYkQ2qWaEW7zHnd9go3pP9D0XUAXBqQ4eTaIdrKCVZ85JZkGOAqP2hcYy0LtukXApsGPguM5dq5CqHhPmOgnr4YPX4LX6WVMDoFYKjIeRUHVAB95h0lbRkLQFbhXnLn6qWX__Py4RWHArMfRQiBDXu7Vou5aY4xTqEVaWZRJOF9zt71fFPet7ssHxe87FMRZNW04rW8u8JG0bS141m5sQ', // Replace with your access token
-                        'Content-Type': 'application/json'
-                    }
-                }
-            );
-            console.log(response.data); // Handle the response data here
-        } catch (error) {
-            console.error('Error:', error);
-        }
-    };
-
 
     useEffect(() => {
         setCurrentDate(new Date());
@@ -56,7 +30,7 @@ export const Consulta402 = () => {
                     </div>
 
                     <div className={styles.areaTransacao}>
-                        <p className={styles.tipoTrasacao}>Tipo Transação: 402 :</p>
+                        <p className={styles.tipoTrasacao}>Tipo Transação: 418 :</p>
                         <div className={styles.inputContainer}>
                             <div className={styles.inputGroup}>
                                 <label className={styles.label}>Placa:</label>
@@ -76,7 +50,7 @@ export const Consulta402 = () => {
                             </div>
                         </div>
                         <div className={styles.botoes}>
-                            <button onClick={handleConsultar}>Consultar</button>
+                            <button>Consultar</button>
                             <button onClick={handleVoltar}>Voltar</button>
                         </div>
                     </div>

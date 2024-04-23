@@ -6,7 +6,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import Collapse from '@mui/material/Collapse';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
-import { ComponenteConsulta } from "../../componets/ComponenteConsulta/ComponenteConsulta";
+import { Consulta } from "../../componets/Consulta/Consulta";
 import { CadastroReenvio } from "../CadastroReenvio/CadastroReenvio";
 import List from '@mui/material/List';
 import Folder from '@mui/icons-material/Folder';
@@ -72,7 +72,7 @@ export const BodyConsulta = () => {
                     </div>
                 </section>
             </div>
-            {isConsultaOpen ? <ComponenteConsulta /> : isCadastroOpen ? <CadastroReenvio /> : <ComponenteInicial />}
+            {isConsultaOpen ? <Consulta /> : isCadastroOpen ? <CadastroReenvio /> : <ComponenteInicial />}
         </div>
     );
 }

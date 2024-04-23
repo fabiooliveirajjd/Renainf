@@ -3,7 +3,6 @@
     height: 100vh;
     width: 100vw;
     background: linear-gradient(rgb(105, 157, 252), rgba(255, 255, 255, 0.979));
-    /* Gradiente de azul claro */
     flex-direction: column;
 }
 
@@ -13,7 +12,6 @@
     margin-left: auto;
 }
 
-/* Media queries para breakpoints específicos */
 @media (min-width: 576px) {
     .areaContainer {
         max-width: 540px;

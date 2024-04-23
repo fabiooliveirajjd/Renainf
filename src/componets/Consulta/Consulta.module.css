@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:rgb(238, 238, 238);
+    background-color: rgb(238, 238, 238);
     width: 100%;
 }
 
@@ -56,10 +56,9 @@
     margin-right: auto;
     margin-left: auto;
     border: 1px solid white;
-    border-collapse: collapse; 
+    border-collapse: collapse;
 }
 
-/* Media queries para breakpoints específicos */
 @media (min-width: 576px) {
     .table {
         max-width: 540px;
@@ -90,11 +89,10 @@
     }
 }
 
-
 .thead {
     background-color: #cee5fc;
-     border-collapse: collapse;
-     cursor: pointer;
+    border-collapse: collapse;
+    cursor: pointer;
 }
 
 .tdR {
