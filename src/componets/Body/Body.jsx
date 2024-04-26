@@ -30,7 +30,12 @@ export const Body = () => {
             <img src={logo} alt="" className={styles.logoPrf} />
             <p className={styles.titulo}> Registro Nacional de  <br />Infrações de  Trânsito</p>
             <div className={styles.card}>
-                <div className={styles.areaConteudoCard}>
+                <div className={styles.areaConteudoCard}
+                onKeyPress={(event) => {
+                    if(event.key === 'Enter') {
+                        handleLogin();
+                    }
+                }}>
                     <p className={styles.textTituloCard}>Login</p>
                     <p className={styles.subTitulo}>Informe seus dados para acessar</p>
                     <div className={styles.areaInput}>
